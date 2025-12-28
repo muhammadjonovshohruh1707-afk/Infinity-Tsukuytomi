@@ -20,9 +20,8 @@ ADMIN_ID = 1604871776
 
 logging.basicConfig(level=logging.INFO)
 
-# PROXY (PythonAnywhere uchun shart)
-session = AiohttpSession(proxy="http://proxy.server:3128")
-bot = Bot(token=TOKEN, session=session)
+# PROXY (PythonAnywhere uchun shart emas)
+bot = Bot(token=TOKEN)
 
 dp = Dispatcher()
 
@@ -291,4 +290,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
