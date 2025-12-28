@@ -46,7 +46,6 @@ async def start(message: types.Message, state: FSMContext):
 
     await message.answer(
         "👋 **Infinity Tsukuyomi Boshqaruv Markaziga xush kelibsiz!**\n\n"
-        "Loyiha bahosi: **$20,000,000**\n"
         "Kerakli bo'limni tanlang 👇",
         reply_markup=kb.as_markup(resize_keyboard=True),
         parse_mode="Markdown"
@@ -292,3 +291,4 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
